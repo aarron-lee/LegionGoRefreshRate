@@ -2,7 +2,7 @@
 
 ![plugin picture](./images/app-picture.png)
 
-Decky Plugin workaround for 144hz on the Lenovo Legion Go
+Experimental Decky Plugin workaround for 144hz on the Lenovo Legion Go
 
 This plugin needs more testing, please report any observed issues or problems.
 
@@ -18,9 +18,9 @@ However, this means you **cannot** dock the device to a TV/Monitor on 144Hz
 
 The only way to dock to a TV/Monitor is to go back to 60Hz first.
 
-When switching between 60Hz and 144Hz, all your open games will be closed, and Steam will restart.
+**When switching between 60Hz and 144Hz, all your open games will be closed, and Steam will restart.**
 
-Make sure you save your game data first before swapping refresh rates!
+**Make sure you save your game data first before swapping refresh rates!**
 
 # Install Instructions
 
