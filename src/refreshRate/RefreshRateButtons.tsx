@@ -110,8 +110,12 @@ const RefreshRateButtons: FC = () => {
             </strong>
             <br />
             <strong>
-              MAKE SURE TO SAVE YOUR DATA, ETC, before changing screen
-              resolutions
+              MAKE SURE TO SAVE YOUR DATA, ETC, before changing refresh rate
+            </strong>
+            <br />
+            <strong>
+              Also, please make sure to disable the unified frame limiter under
+              display settings
             </strong>
           </div>
         </PanelSectionRow>
