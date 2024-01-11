@@ -1,5 +1,7 @@
 # Legion Go Refresh Rate - Decky Plugin
 
+![plugin picture](./images/app-picture.png)
+
 Decky Plugin workaround for 144hz on the Lenovo Legion Go
 
 - only tested on Nobara v39 so far
