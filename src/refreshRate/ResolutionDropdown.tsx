@@ -1,6 +1,6 @@
-import { FC } from 'react';
-import { DropdownItem } from 'decky-frontend-lib';
-import { Resolutions } from './RefreshRateButtons';
+import { FC } from "react";
+import { DropdownItem } from "decky-frontend-lib";
+import { Resolutions } from "./RefreshRateButtons";
 
 type Props = {
   currentResolution: string;
@@ -9,33 +9,31 @@ type Props = {
 
 const ResolutionDropdown: FC<Props> = ({
   currentResolution,
-  setCurrentResolution
+  setCurrentResolution,
 }) => {
   const dropdownOptions = Object.entries(Resolutions).map(([value, label]) => {
     return {
       data: value,
       label,
-      value
+      value,
     };
   });
 
   return (
     <div>
       <DropdownItem
-        label="Screen Resolution"
-        description="Resolution will be int-scaled when applicable"
         bottomSeparator="none"
         rgOptions={dropdownOptions.map((o) => {
           return {
             data: o.data,
             label: o.label,
-            value: o.value
+            value: o.value,
           };
         })}
         selectedOption={
           dropdownOptions.find((o) => {
             return o.data === currentResolution;
-          })?.data || 'native'
+          })?.data || "native"
         }
         onChange={({ value }: any) => {
           setCurrentResolution(value);

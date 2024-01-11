@@ -76,10 +76,14 @@ def get_gamescope_override(refresh, resolution):
 
     refresh_range = '' if refresh == 60 else '60,144'
     int_scale_str = ""
+    external_screen = ''
 
     if resolution != 'native':
-        int_scale_str = f"-S integer -w {target_width} -h {target_height} -W 2560 -H 1600"
+        int_scale_str = f"-S integer -w {target_width} -h {target_height} -W 2560 -H 1600 "
 
-    file_contents = f'export GAMESCOPECMD="\$GAMESCOPECMD {int_scale_str} -r {refresh} "\
+    if refresh == 144:
+        external_screen = "--force-panel-type external --force-external-orientation left "
+
+    file_contents = f'export GAMESCOPECMD="$GAMESCOPECMD {int_scale_str} -r {refresh} {external_screen}"\
     \nexport STEAM_DISPLAY_REFRESH_LIMITS="{refresh_range}"'
     return file_contents

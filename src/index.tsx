@@ -25,7 +25,7 @@ export default definePlugin((serverApi: ServerAPI) => {
   saveServerApi(serverApi);
 
   return {
-    title: <div className={staticClasses.Title}>LegionGoRefreshRate</div>,
+    title: <div className={staticClasses.Title}>LGO Refresh Rate</div>,
     content: <Content serverAPI={serverApi} />,
     icon: <FaTv />,
     onDismount() {},
