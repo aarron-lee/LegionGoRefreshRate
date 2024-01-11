@@ -4,6 +4,10 @@
 
 Decky Plugin workaround for 144hz on the Lenovo Legion Go
 
+This plugin needs more testing, please report any observed issues or problems.
+
+If you need to manually revert the changes made by this plugin, you can do so by deleting the `$HOME/.config/environment.d/override-gamescopecmd.conf` file, this file is the only file that this plugin creates.
+
 - only tested on Nobara v39 so far
 
 # WARNING! READ THIS
