@@ -110,7 +110,8 @@ const RefreshRateButtons: FC = () => {
             </strong>
             <br />
             <strong>
-              MAKE SURE TO SAVE YOUR DATA, ETC, before changing refresh rate
+              MAKE SURE TO SAVE YOUR GAME DATA, ETC, before changing refresh
+              rate
             </strong>
             <br />
             <strong>

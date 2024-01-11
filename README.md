@@ -20,7 +20,7 @@ The only way to dock to a TV/Monitor is to go back to 60Hz first.
 
 When switching between 60Hz and 144Hz, all your open games will be closed, and Steam will restart.
 
-Make sure you save your data first before swapping refresh rates!
+Make sure you save your game data first before swapping refresh rates!
 
 # Install Instructions
 
