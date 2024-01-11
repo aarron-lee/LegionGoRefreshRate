@@ -1,19 +1,26 @@
 import os
+import logging
 
 # The decky plugin module is located at decky-loader/plugin
 # For easy intellisense checkout the decky-loader code one directory up
 # or add the `decky-loader/plugin` path to `python.analysis.extraPaths` in `.vscode/settings.json`
+
 import decky_plugin
+
+import set_refresh_rates
 
 
 class Plugin:
-    # A normal method. It can be called from JavaScript using call_plugin_function("method_1", argument1, argument2)
-    async def add(self, left, right):
-        return left + right
-
     # Asyncio-compatible long-running code, executed in a task when the plugin is loaded
     async def _main(self):
         decky_plugin.logger.info("Hello World!")
+
+    async def set_refresh_rate(self, refresh_rate: int, resolution: str):
+        decky_plugin.logger.info(f"setting refresh rate {refresh_rate} {resolution}")
+        if(refresh_rate == 60):
+            return set_refresh_rates.set_60(resolution)
+        if(refresh_rate == 144):
+            return set_refresh_rates.set_144(resolution)
 
     # Function called first during the unload process, utilize this to handle your plugin being removed
     async def _unload(self):
@@ -39,3 +46,6 @@ class Plugin:
         decky_plugin.migrate_runtime(
             os.path.join(decky_plugin.DECKY_HOME, "template"),
             os.path.join(decky_plugin.DECKY_USER_HOME, ".local", "share", "decky-template"))
+
+    async def log_info(self, info):
+        logging.info(info)

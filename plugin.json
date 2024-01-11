@@ -1,7 +1,7 @@
 {
-  "name": "Example Plugin",
+  "name": "Legion Go Refresh Rate",
   "author": "John Doe",
-  "flags": ["debug", "_root"],
+  "flags": [],
   "publish": {
     "tags": ["template", "root"],
     "description": "Decky example plugin.",
