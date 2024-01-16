@@ -1,3 +1,7 @@
+# No longer necessary, full 144hz fix exists for the LGO no
+
+see https://github.com/aarron-lee/legion-go-tricks for details
+
 # Legion Go Refresh Rate - Decky Plugin
 
 ![plugin picture](./images/app-picture.png)
