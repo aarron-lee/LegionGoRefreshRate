@@ -88,3 +88,18 @@ def get_gamescope_override(refresh, resolution):
     file_contents = f'export GAMESCOPECMD="$GAMESCOPECMD {int_scale_str} {refresh_str} "\
     \nexport STEAM_DISPLAY_REFRESH_LIMITS="{refresh_range}"\''
     return file_contents
+
+def revert_changes():
+    os.remove(CONF_FILE_LOCATION)
+    result = subprocess.run(
+        ["/usr/bin/steam", "-shutdown"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE, 
+        text=True,
+        user=PLUGIN_USER,
+        cwd=f'/home/{PLUGIN_USER}'
+    )
+    if result.stderr:
+        decky_plugin.logger.error(f"steam shutdown error: {result.stderr}")
+        return False
+    return True

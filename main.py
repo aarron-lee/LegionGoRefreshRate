@@ -22,6 +22,10 @@ class Plugin:
         if(refresh_rate == 144):
             return set_refresh_rates.set_144(resolution)
 
+    async def revert_changes(self):
+        return set_refresh_rates.revert_changes()
+
+
     # Function called first during the unload process, utilize this to handle your plugin being removed
     async def _unload(self):
         decky_plugin.logger.info("Goodbye World!")

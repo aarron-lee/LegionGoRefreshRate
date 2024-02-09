@@ -48,6 +48,10 @@ const RefreshRateButtons: FC = () => {
     });
   }, [resolution]);
 
+  const revertChanges = async () => {
+    return await serverApi.callServerMethod("revert_changes", {});
+  };
+
   return (
     <>
       <PanelSection title={"Display"}>
@@ -85,6 +89,20 @@ const RefreshRateButtons: FC = () => {
             layout={"below"}
           >
             Enable 144Hz {Resolutions[resolution144]}
+          </ButtonItem>
+        </PanelSectionRow>
+        <PanelSectionRow>
+          <ButtonItem
+            onClick={revertChanges}
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            layout={"below"}
+          >
+            Revert All Changes
           </ButtonItem>
         </PanelSectionRow>
         {/* <PanelSectionRow>
