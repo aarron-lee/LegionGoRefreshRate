@@ -71,7 +71,7 @@ const RefreshRateButtons: FC = () => {
             }}
             layout={"below"}
           >
-            Set 60Hz {Resolutions[resolution]}
+            Force 60Hz Only {Resolutions[resolution]}
           </ButtonItem>
         </PanelSectionRow>
         <ResolutionDropdown
@@ -89,10 +89,10 @@ const RefreshRateButtons: FC = () => {
             }}
             layout={"below"}
           >
-            Set 144Hz {Resolutions[resolution144]}
+            Enable 144Hz {Resolutions[resolution144]}
           </ButtonItem>
         </PanelSectionRow>
-        <PanelSectionRow>
+        {/* <PanelSectionRow>
           <div style={{ fontSize: "80%" }}>
             <strong>
               <em>Legion Go 144Hz Refresh Rate workaround</em>
@@ -119,7 +119,7 @@ const RefreshRateButtons: FC = () => {
               display settings
             </strong>
           </div>
-        </PanelSectionRow>
+        </PanelSectionRow> */}
       </PanelSection>
     </>
   );
