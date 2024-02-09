@@ -91,7 +91,7 @@ const RefreshRateButtons: FC = () => {
             Enable 144Hz {Resolutions[resolution144]}
           </ButtonItem>
         </PanelSectionRow>
-        <PanelSectionRow>
+        {/* <PanelSectionRow>
           <ButtonItem
             onClick={revertChanges}
             style={{
@@ -104,7 +104,7 @@ const RefreshRateButtons: FC = () => {
           >
             Revert All Changes
           </ButtonItem>
-        </PanelSectionRow>
+        </PanelSectionRow> */}
         {/* <PanelSectionRow>
           <div style={{ fontSize: "80%" }}>
             <strong>
