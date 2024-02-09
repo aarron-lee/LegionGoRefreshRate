@@ -8,12 +8,7 @@ import {
 
 import { getServerApi } from "../backend/utils";
 import ResolutionDropdown from "./ResolutionDropdown";
-
-export const Resolutions = {
-  qHD: "1280x800",
-  FHD: "1920x1200",
-  native: "2560x1600",
-};
+import { Resolutions } from "./constants";
 
 const RefreshRateButtons: FC = () => {
   const serverApi = getServerApi() as ServerAPI;

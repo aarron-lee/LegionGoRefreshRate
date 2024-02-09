@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { DropdownItem } from "decky-frontend-lib";
-import { Resolutions } from "./RefreshRateButtons";
+import { Resolutions } from "./constants";
 
 type Props = {
   currentResolution: string;
