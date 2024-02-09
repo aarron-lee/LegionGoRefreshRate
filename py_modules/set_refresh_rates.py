@@ -86,5 +86,5 @@ def get_gamescope_override(refresh, resolution):
     refresh_str = '-r 60' if refresh == 60 else ''
 
     file_contents = f'export GAMESCOPECMD="$GAMESCOPECMD {int_scale_str} {refresh_str} "\
-    \nexport STEAM_DISPLAY_REFRESH_LIMITS="{refresh_range}"\
+    \nexport STEAM_DISPLAY_REFRESH_LIMITS="{refresh_range}"\''
     return file_contents
