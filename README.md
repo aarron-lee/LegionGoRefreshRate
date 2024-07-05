@@ -1,3 +1,5 @@
+# DEPRECATED - you should no longer use this plugin
+
 # Legion Go Refresh Rate - Decky Plugin
 
 Experimental Decky Plugin for to change refresh rates and resolutions in SteamUI
